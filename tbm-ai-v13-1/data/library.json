@@ -1,0 +1,277 @@
+[
+  {
+    "id": "gangform-material-crane",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 자재반입",
+    "workNameTranslations": {
+      "ko": "갱폼 자재반입",
+      "vi": "Đưa vật liệu gangform vào",
+      "zh": "Gangform 材料进场",
+      "en": "Gangform material delivery"
+    },
+    "riskObjectKo": "고정식크레인",
+    "riskObjectTranslations": {
+      "ko": "고정식크레인",
+      "vi": "Cần trục cố định",
+      "zh": "固定式起重机",
+      "en": "Fixed crane"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "인양 장비 이상 유무를 확인한다",
+      "신호수 지시에 따라 이동한다",
+      "자재 반입 동선을 통제한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 자재반입입니다. 고정식크레인 상태를 확인하고 신호수 지시에 따라 자재 반입 동선을 통제하겠습니다."
+  },
+  {
+    "id": "gangform-assembly-scaffold",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 조립",
+    "workNameTranslations": {
+      "ko": "갱폼 조립",
+      "vi": "Lắp ráp gangform",
+      "zh": "Gangform 组装",
+      "en": "Gangform assembly"
+    },
+    "riskObjectKo": "비계",
+    "riskObjectTranslations": {
+      "ko": "비계",
+      "vi": "Giàn giáo",
+      "zh": "脚手架",
+      "en": "Scaffold"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "비계 고정 상태를 확인한다",
+      "작업발판 안전 상태를 점검한다",
+      "추락 위험 구간을 통제한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 조립입니다. 비계 고정 상태와 작업발판 안전 상태를 확인하고 추락 위험 구간을 통제하겠습니다."
+  },
+  {
+    "id": "gangform-assembly-welder",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 조립",
+    "workNameTranslations": {
+      "ko": "갱폼 조립",
+      "vi": "Lắp ráp gangform",
+      "zh": "Gangform 组装",
+      "en": "Gangform assembly"
+    },
+    "riskObjectKo": "용접(단)기",
+    "riskObjectTranslations": {
+      "ko": "용접(단)기",
+      "vi": "Máy hàn",
+      "zh": "焊机",
+      "en": "Welder"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "용접기 전선과 접지를 확인한다",
+      "불티 비산 방지 조치를 한다",
+      "화재감시자를 배치한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 조립입니다. 용접기 전선과 접지를 확인하고 불티 비산을 방지하며 화재감시자를 배치하겠습니다."
+  },
+  {
+    "id": "gangform-assembly-platform",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 조립",
+    "workNameTranslations": {
+      "ko": "갱폼 조립",
+      "vi": "Lắp ráp gangform",
+      "zh": "Gangform 组装",
+      "en": "Gangform assembly"
+    },
+    "riskObjectKo": "작업발판/가설계단",
+    "riskObjectTranslations": {
+      "ko": "작업발판/가설계단",
+      "vi": "Sàn thao tác/Cầu thang tạm",
+      "zh": "作业平台/临时楼梯",
+      "en": "Working platform/temporary stairs"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "작업발판 흔들림 여부를 확인한다",
+      "가설계단 난간을 확인한다",
+      "미끄럼과 추락 위험을 통제한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 조립입니다. 작업발판과 가설계단 상태를 확인하고 미끄럼 및 추락 위험을 통제하겠습니다."
+  },
+  {
+    "id": "gangform-lifting-integrated-scaffold",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 인양, 설치",
+    "workNameTranslations": {
+      "ko": "갱폼 인양, 설치",
+      "vi": "Nâng và lắp đặt gangform",
+      "zh": "Gangform 吊装与安装",
+      "en": "Gangform lifting and installation"
+    },
+    "riskObjectKo": "비계(일체형비계)",
+    "riskObjectTranslations": {
+      "ko": "비계(일체형비계)",
+      "vi": "Giàn giáo tích hợp",
+      "zh": "一体式脚手架",
+      "en": "Integrated scaffold"
+    },
+    "quantity": 4,
+    "requiredSafetyRules": [
+      "일체형비계 고정상태를 확인한다",
+      "승강 구간 출입을 통제한다",
+      "추락 방지 설비를 확인한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 인양, 설치입니다. 일체형비계 고정 상태와 추락 방지 설비를 확인하고 승강 구간 출입을 통제하겠습니다."
+  },
+  {
+    "id": "gangform-lifting-formwork",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 인양, 설치",
+    "workNameTranslations": {
+      "ko": "갱폼 인양, 설치",
+      "vi": "Nâng và lắp đặt gangform",
+      "zh": "Gangform 吊装与安装",
+      "en": "Gangform lifting and installation"
+    },
+    "riskObjectKo": "거푸집",
+    "riskObjectTranslations": {
+      "ko": "거푸집",
+      "vi": "Cốp pha",
+      "zh": "模板",
+      "en": "Formwork"
+    },
+    "quantity": 9,
+    "requiredSafetyRules": [
+      "거푸집 결속 상태를 확인한다",
+      "인양 중 하부 출입을 금지한다",
+      "설치 위치를 정확히 유도한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 인양, 설치입니다. 거푸집 결속 상태를 확인하고 인양 중 하부 출입을 금지하며 설치 위치를 정확히 유도하겠습니다."
+  },
+  {
+    "id": "gangform-lifting-shoring",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 인양, 설치",
+    "workNameTranslations": {
+      "ko": "갱폼 인양, 설치",
+      "vi": "Nâng và lắp đặt gangform",
+      "zh": "Gangform 吊装与安装",
+      "en": "Gangform lifting and installation"
+    },
+    "riskObjectKo": "동바리",
+    "riskObjectTranslations": {
+      "ko": "동바리",
+      "vi": "Chống đỡ",
+      "zh": "支撑",
+      "en": "Shoring"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "동바리 설치 상태를 확인한다",
+      "임의 해체를 금지한다",
+      "작업 구간 하중을 관리한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 인양, 설치입니다. 동바리 설치 상태를 확인하고 임의 해체를 금지하며 작업 구간 하중을 관리하겠습니다."
+  },
+  {
+    "id": "gangform-lifting-crane",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 인양, 설치",
+    "workNameTranslations": {
+      "ko": "갱폼 인양, 설치",
+      "vi": "Nâng và lắp đặt gangform",
+      "zh": "Gangform 吊装与安装",
+      "en": "Gangform lifting and installation"
+    },
+    "riskObjectKo": "고정식크레인",
+    "riskObjectTranslations": {
+      "ko": "고정식크레인",
+      "vi": "Cần trục cố định",
+      "zh": "固定式起重机",
+      "en": "Fixed crane"
+    },
+    "quantity": 2,
+    "requiredSafetyRules": [
+      "크레인 훅과 와이어 상태를 확인한다",
+      "신호수와 통신 상태를 유지한다",
+      "매달린 하중 아래 접근을 금지한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 인양, 설치입니다. 크레인 훅과 와이어 상태를 확인하고 신호수와 통신 상태를 유지하며 매달린 하중 아래 접근을 금지하겠습니다."
+  },
+  {
+    "id": "gangform-lifting-platform",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 인양, 설치",
+    "workNameTranslations": {
+      "ko": "갱폼 인양, 설치",
+      "vi": "Nâng và lắp đặt gangform",
+      "zh": "Gangform 吊装与安装",
+      "en": "Gangform lifting and installation"
+    },
+    "riskObjectKo": "작업발판/가설계단",
+    "riskObjectTranslations": {
+      "ko": "작업발판/가설계단",
+      "vi": "Sàn thao tác/Cầu thang tạm",
+      "zh": "作业平台/临时楼梯",
+      "en": "Working platform/temporary stairs"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "작업발판 고정 상태를 확인한다",
+      "이동 동선을 정리한다",
+      "전도와 추락 위험을 방지한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 인양, 설치입니다. 작업발판과 가설계단 고정 상태를 확인하고 이동 동선을 정리하며 전도와 추락 위험을 방지하겠습니다."
+  },
+  {
+    "id": "gangform-dismantle-scaffold",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 해체, 반출",
+    "workNameTranslations": {
+      "ko": "갱폼 해체, 반출",
+      "vi": "Tháo dỡ và đưa gangform ra ngoài",
+      "zh": "Gangform 拆除与搬出",
+      "en": "Gangform dismantling and removal"
+    },
+    "riskObjectKo": "비계",
+    "riskObjectTranslations": {
+      "ko": "비계",
+      "vi": "Giàn giáo",
+      "zh": "脚手架",
+      "en": "Scaffold"
+    },
+    "quantity": 1,
+    "requiredSafetyRules": [
+      "비계 흔들림과 고정 상태를 확인한다",
+      "해체 순서를 지킨다",
+      "낙하물 위험 구간을 통제한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 해체, 반출입니다. 비계 상태를 확인하고 해체 순서를 지키며 낙하물 위험 구간을 통제하겠습니다."
+  },
+  {
+    "id": "gangform-dismantle-integrated-scaffold",
+    "category": "갱폼 작업",
+    "workNameKo": "갱폼 해체, 반출",
+    "workNameTranslations": {
+      "ko": "갱폼 해체, 반출",
+      "vi": "Tháo dỡ và đưa gangform ra ngoài",
+      "zh": "Gangform 拆除与搬出",
+      "en": "Gangform dismantling and removal"
+    },
+    "riskObjectKo": "비계(일체형비계)",
+    "riskObjectTranslations": {
+      "ko": "비계(일체형비계)",
+      "vi": "Giàn giáo tích hợp",
+      "zh": "一体式脚手架",
+      "en": "Integrated scaffold"
+    },
+    "quantity": 4,
+    "requiredSafetyRules": [
+      "일체형비계 해체 전 고정 상태를 확인한다",
+      "작업 구간 하부를 통제한다",
+      "부재 낙하 방지를 조치한다"
+    ],
+    "correctAnswerExample": "오늘 작업은 갱폼 해체, 반출입니다. 일체형비계 해체 전 고정 상태를 확인하고 작업 구간 하부를 통제하며 부재 낙하 방지를 조치하겠습니다."
+  }
+]
