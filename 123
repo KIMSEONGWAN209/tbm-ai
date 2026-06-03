@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TBM AI Demo V15</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+
+header{
+background:#0d6efd;
+color:white;
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+button{
+background:#0d6efd;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#084298;
+}
+
+.record{
+width:100px;
+height:100px;
+border-radius:50%;
+font-size:18px;
+}
+
+.result{
+padding:20px;
+border-radius:8px;
+margin-top:15px;
+font-weight:bold;
+}
+
+.pass{
+background:#d1e7dd;
+color:#0f5132;
+}
+
+.fail{
+background:#f8d7da;
+color:#842029;
+}
+
+.hidden{
+display:none;
+}
+
+.timer{
+font-size:40px;
+font-weight:bold;
+text-align:center;
+margin:20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+TBM AI DEMO V15
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>언어 선택</h3>
+
+<select id="lang">
+<option>한국어</option>
+<option>English</option>
+<option>中文</option>
+<option>Tiếng Việt</option>
+</select>
+</div>
+
+<div class="card">
+<h3>근로자 정보</h3>
+
+<input id="name" placeholder="이름">
+
+<input id="company" placeholder="소속">
+
+<select id="job">
+<option>작업 선택</option>
+<option>크레인 작업</option>
+<option>고소 작업</option>
+<option>굴착 작업</option>
+<option>전기 작업</option>
+</select>
+
+<input type="date" id="workDate">
+</div>
+
+<div class="card">
+
+<h3>TBM 녹음</h3>
+
+<center>
+<button class="record" id="recordBtn">
+🎤
+</button>
+</center>
+
+<textarea
+id="stt"
+rows="6"
+placeholder="STT 결과"
+></textarea>
+
+</div>
+
+<div class="card">
+
+<h3>AI 평가</h3>
+
+<button id="submitBtn">
+AI 평가 시작
+</button>
+
+<div id="resultArea"></div>
+
+</div>
+
+<div id="educationCard" class="card hidden">
+
+<h3>보완 교육</h3>
+
+<p>
+위험요소 및 안전수칙을 다시 확인하세요.
+</p>
+
+<div class="timer" id="timer">
+30
+</div>
+
+<button id="startEdu">
+교육 시작
+</button>
+
+</div>
+
+<div id="completeCard" class="card hidden">
+<h2>✅ 이수 완료</h2>
+<p>TBM 교육이 완료되었습니다.</p>
+</div>
+
+</div>
+
+<script>
+
+const recordBtn =
+document.getElementById("recordBtn");
+
+const stt =
+document.getElementById("stt");
+
+recordBtn.onclick = ()=>{
+
+stt.value=
+`오늘 작업은 크레인 작업입니다.
+
+슬링 상태 확인.
+
+화물 아래 출입 금지.
+
+신호수 지시 준수.
+
+개인보호구 착용 완료.`;
+
+};
+
+const submitBtn =
+document.getElementById("submitBtn");
+
+const resultArea =
+document.getElementById("resultArea");
+
+const educationCard =
+document.getElementById("educationCard");
+
+const completeCard =
+document.getElementById("completeCard");
+
+submitBtn.onclick=()=>{
+
+let score =
+Math.floor(Math.random()*100);
+
+if(score >= 70){
+
+resultArea.innerHTML=
+`
+<div class="result pass">
+AI 평가 결과 : 이수<br>
+점수 : ${score}점
+</div>
+`;
+
+completeCard.classList.remove("hidden");
+educationCard.classList.add("hidden");
+
+}else{
+
+resultArea.innerHTML=
+`
+<div class="result fail">
+AI 평가 결과 : 미이수<br>
+점수 : ${score}점
+</div>
+`;
+
+educationCard.classList.remove("hidden");
+completeCard.classList.add("hidden");
+}
+
+};
+
+const timerEl =
+document.getElementById("timer");
+
+const startEdu =
+document.getElementById("startEdu");
+
+startEdu.onclick=()=>{
+
+let time=30;
+
+timerEl.innerText=time;
+
+let interval=setInterval(()=>{
+
+time--;
+
+timerEl.innerText=time;
+
+if(time<=0){
+
+clearInterval(interval);
+
+alert("보완교육 완료");
+
+completeCard.classList.remove("hidden");
+
+}
+
+},1000);
+
+};
+
+</script>
+
+</body>
+</html>
